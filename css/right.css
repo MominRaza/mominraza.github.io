@@ -1,0 +1,123 @@
+.right header{
+    padding: 20px;
+}
+.right header h2{
+    font-size: 2em;
+}
+.right header .title::after{
+    content: '';
+    position: absolute;
+    margin-top: 10px;
+    height: 4px;
+    width: 50px;
+    background: #0424f2;
+}
+.right header nav{
+    float: right;
+    margin-top: -70px;
+}
+.right header nav ul{
+    position: absolute;
+    background: linear-gradient(to bottom, #256af3 0%, #3488f4 100%);
+    border-radius: 20px 0px 0px 20px;
+    display: inline-block;
+    margin-top: 25px;
+    width: 0px;
+    height: 37px;
+    text-align: center;
+    margin-left: -30px;
+    overflow: hidden;
+}
+.right header nav.active ul{
+    width: 210px;
+    margin-left: -240px;
+}
+.right header nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+.right header nav ul li a{
+    color: white;
+}
+.right header nav menu{
+    position: absolute;
+    z-index: 9;
+    background: #3488f4;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    border: solid 4px #3488f4;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: -35px;
+}
+.right header nav menu span{
+    background: white;
+    height: 5px;
+    width: 40px;
+    margin: 6.4px 0;
+    display: block;
+}
+.right header nav.active menu span{
+    transition: .5s ease-in-out;
+}
+.right header nav.active menu span:nth-child(1){
+    transform: rotate(45deg);
+    margin-top: 20px;
+    width: 45px;
+}
+.right header nav.active menu span:nth-child(2){
+    display: none;
+}
+.right header nav.active menu span:nth-child(3){
+    transform: rotate(-45deg);
+    margin-top: -15px;
+    width: 45px;
+}
+.right .desc{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.right .desc p{
+    line-height: 1.5em;
+    letter-spacing: .05em;
+}
+.right .detail{
+    margin-left: -10px;
+    width: calc(100% + 20px);
+    padding: 30px;
+    background: #f1f2f3;
+}
+.right .detail-t{
+    margin: 10px 0;
+}
+.right .detail-t h3{
+    font-size: 1.6em;
+}
+.right .details{
+    width: calc(100% - 40px);
+    margin-left: -30px;
+    padding: 20px;
+}
+.right .details .details-p{
+    display: inline-block;
+    width: calc(50% - 63px);
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    height: 60px;
+}
+.right .details .details-p img{
+    width: 40px;
+    float: left;
+    margin: 10px 15px 10px 0px;
+}
+.right .details .details-d{
+    font-size: .8em;
+    color: #6e7e91;
+    margin-top: 10px;
+}

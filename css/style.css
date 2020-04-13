@@ -1,0 +1,50 @@
+@import "left.css";
+@import "right.css";
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3{
+    color: #354459;
+}
+p{
+    color: #546275;
+}
+a{
+    text-decoration: none;
+    color: #546275;
+}
+
+body{
+    background: linear-gradient(135deg, #43edd3 0%, #d135ed 100%);
+    width: 100%;
+    font-family: sans-serif;
+}
+section{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    padding: 0 30px;
+}
+.left, .right{
+    display: inline-block;
+    background: white;
+    border-radius: 15px;
+    padding: 20px 10px;
+    margin-top: 30px;
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.left{
+    width: 29%;
+    text-align: center;
+    min-height: 620px;
+}
+.gap{
+    width: 3%;
+}
+.right{
+    width: 68%;
+    min-height: 670px;
+}
