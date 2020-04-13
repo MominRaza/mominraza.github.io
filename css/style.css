@@ -40,11 +40,13 @@ section{
     width: 29%;
     text-align: center;
     min-height: 620px;
+    position: sticky;
+    top: 30px;
 }
 .gap{
     width: 3%;
 }
 .right{
     width: 68%;
-    min-height: 670px;
+    min-height: 620px;
 }

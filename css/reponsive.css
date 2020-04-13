@@ -1,0 +1,78 @@
+@media (max-width: 1010px){
+    .right .detail{
+        margin-left: -10px;
+        width: calc(100% + 50px);
+        padding: 15px;
+    }
+    .right .details .details-p{
+        padding: 15px;
+        margin: 6px;
+        height: 70px;
+    }
+}
+@media (max-width: 900px){
+    section{
+        padding: 0 10px;
+    }
+    .left, .right{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .left{
+        width: 39%;
+        top: 10px;
+    }
+    .gap{
+        width: 1%;
+    }
+    .right{
+        width: 60%;
+        min-height: 840px;
+    }
+    .left .main span.chip{
+        font-size: .8em;
+        padding: 8px 15px;
+    }
+    .left .add{
+        width: calc(100% - 0px);
+        margin-left: -10px;
+        padding: 1px 10px;
+        text-align: left;
+    }
+    .left .add p{
+        font-size: .9em;
+    }
+    .right .details{
+        grid-template-columns: 1fr;
+    }
+    .right .details .details-p{
+        padding: 15px;
+        margin: 7px;
+        height: 50px;
+    }
+    .right .details .details-p img{
+        width: 30px;
+        margin: 10px 15px 20px 5px;
+    }
+    
+}
+@media (max-width: 570px){
+    section{
+        max-width: unset;
+        display: block;
+    }
+    .left, .right{
+        display: unset;
+    }
+    .left{
+        width: 100%;
+        top: 10px;
+    }
+    .gap{
+        width: 1%;
+    }
+    .right{
+        width: 100%;
+        min-height: 840px;
+    }
+}
