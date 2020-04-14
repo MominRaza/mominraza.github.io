@@ -82,8 +82,9 @@
     margin-bottom: 20px;
 }
 .right .desc p{
-    line-height: 1.5em;
-    letter-spacing: .05em;
+    line-height: 1.7em;
+    letter-spacing: .07em;
+    font-size: .95em;
 }
 .right .detail{
     margin-left: -10px;

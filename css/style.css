@@ -39,7 +39,7 @@ section{
 .left{
     width: 29%;
     text-align: center;
-    min-height: 620px;
+    min-height: 650px;
     position: sticky;
     top: 30px;
 }
@@ -48,5 +48,5 @@ section{
 }
 .right{
     width: 68%;
-    min-height: 620px;
+    min-height: 700px;
 }
