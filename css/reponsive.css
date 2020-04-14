@@ -28,7 +28,6 @@
     }
     .right{
         width: 60%;
-        min-height: 980px;
     }
     .left .main span.chip{
         font-size: .8em;

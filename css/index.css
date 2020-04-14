@@ -1,0 +1,9 @@
+.right{
+    min-height: 700px;
+}
+
+@media (max-width: 900px){
+    .right{
+        min-height: 980px;
+    }
+}
