@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    transition: .5s;
 }
 h1, h2, h3{
     color: #354459;
@@ -19,6 +20,7 @@ body{
     background: linear-gradient(135deg, #43edd3 0%, #d135ed 100%);
     width: 100%;
     font-family: sans-serif;
+    background-attachment: fixed;
 }
 section{
     max-width: 1100px;

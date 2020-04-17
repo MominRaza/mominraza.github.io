@@ -27,7 +27,6 @@
     text-align: center;
     margin-left: -20px;
     overflow: hidden;
-    transition: .5s;
 }
 .right header nav.active ul{
     width: 320px;
@@ -61,7 +60,6 @@
     width: 40px;
     margin: 6.4px 0;
     display: block;
-    transition: .5s;
 }
 .right header nav.active menu span:nth-child(1){
     transform: rotate(45deg);
@@ -113,13 +111,45 @@
     margin: 10px;
     height: 60px;
 }
+.right .details .details-p.portfolio{
+    background: white;
+    height: unset;
+    padding: 10px 20px 5px 20px;
+}
 .right .details .details-p img{
     width: 40px;
     float: left;
     margin: 10px 15px 20px 0px;
 }
+.right .details .details-p.portfolio img{
+    width: calc(100% + 40px);
+    float: unset;
+    margin: -10px 0 10px -20px;
+    border-radius: 10px 10px 0 0;
+}
+.right .details .details-p.portfolio .details-t{
+    font-size: 1.3em;
+}
 .right .details .details-d{
     font-size: .8em;
     color: #6e7e91;
     margin: 10px 0;
+}
+
+.right .details .details-p.portfolio .image-o{
+    margin-top: -110px;
+    margin-bottom: 90px;
+    text-align: center;
+    opacity: 0;
+}
+.right .details .details-p.portfolio:hover .image-o{
+    opacity: 1;
+}
+
+.right .details .details-p.portfolio a{
+    background: rgba(0, 0, 0, 0.8);
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px;
 }
