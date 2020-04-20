@@ -104,6 +104,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.right .skills .details{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 .right .details .details-p{
     background: white;
     border-radius: 10px;
@@ -112,9 +115,13 @@
     height: 60px;
 }
 .right .details .details-p.portfolio{
-    background: white;
     height: unset;
     padding: 10px 20px 5px 20px;
+}
+.right .skills .details .details-p{
+    height: unset;
+    text-align: center;
+    padding: 20px 15px;
 }
 .right .details .details-p img{
     width: 40px;
@@ -126,6 +133,13 @@
     float: unset;
     margin: -10px 0 10px -20px;
     border-radius: 10px 10px 0 0;
+}
+.right .skills .details .details-p img{
+    width: unset;
+    max-width: 130px;
+    height: 70px;
+    float: unset;
+    margin: 10px 0 20px 0;
 }
 .right .details .details-p.portfolio .details-t{
     font-size: 1.3em;
