@@ -1,9 +1,13 @@
 .right{
-    min-height: 700px;
+    height: max-content;
+    min-height: unset;
+    padding-bottom: unset;
 }
 
 @media (max-width: 900px){
     .right{
-        min-height: 980px;
+        height: max-content !important;
+        min-height: unset;
+        padding-bottom: unset;
     }
 }
