@@ -75,16 +75,3 @@ section{
     transform: scale(1.1);
     z-index: 1;
 }
-#back{
-    display: none;
-    transition: 1s;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-}
-.zoom:hover ~ #back{
-    display: block;
-}
