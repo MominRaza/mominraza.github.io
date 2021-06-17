@@ -241,14 +241,26 @@
 
     <div class="modal card" id="modal">
       <h2 class="h4">Login</h2>
+      <button
+        class="btn btn-t danger sm modal-close"
+        onclick="toggleModal('modal')"
+      >
+        <div class="material-icons">close</div>
+      </button>
       <form action="#">
         <div class="card-body">
-          <label for="username">Username</label>
-          <input type="text" name="username" id="username" />
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password" />
-          <input type="checkbox" name="terms" id="terms" />
-          <label for="terms">Accept terms</label>
+          <label>
+            Username
+            <input type="text" name="username" id="username" />
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" id="password" />
+          </label>
+          <label>
+            <input type="checkbox" name="terms" id="terms" />
+            Accept terms
+          </label>
         </div>
         <div class="card-footer right">
           <button type="submit" class="btn primary">Done</button>
