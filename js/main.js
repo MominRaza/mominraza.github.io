@@ -1,4 +1,4 @@
-var navButton = document.getElementById('nav-button');
+var navButton = document.getElementById("nav-button");
 function toggleMenu() {
-    navButton.classList.toggle('active');
+  navButton.classList.toggle("active");
 }
