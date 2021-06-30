@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cards - Amboo</title>
+    <title>Get Started with Amboo</title>
     <!-- Roboto Font -->
     <link
       rel="stylesheet"
@@ -20,10 +21,128 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
   </head>
-
   <body>
-    <h2 class="h2">Cards</h2>
-    <div class="main">
+    <header class="header">
+      <div class="appbar">
+        <div class="leading" onclick="toggleMenu()">
+          <a href="#" class="btn btn-t sm white">
+            <i class="material-icons">menu</i>
+          </a>
+        </div>
+        <div class="ts-wraper">
+          <p class="title">Amboo</p>
+        </div>
+        <div class="trailing">
+          <a href="#" class="btn btn-t sm white">
+            <i class="material-icons">share</i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <nav class="app-drawer">
+      <div class="app-drawer-head"></div>
+      <ul class="app-drawer-list">
+        <li class="app-drawer-item">
+          <a href="../" class="nav-link">
+            <i class="material-icons">home</i>
+            Home
+          </a>
+        </li>
+        <li class="app-drawer-item">
+          <a href="../get-started.html" class="nav-link">
+            <i class="material-icons">integration_instructions</i>
+            Getting Started
+          </a>
+        </li>
+        <li
+          class="app-drawer-item submenu submenu-active"
+          onclick="toggleSubMenu(this)"
+        >
+          <a href="./" class="nav-link">
+            <i class="material-icons">apps</i>
+            Components
+          </a>
+          <ul class="app-drawer-sub-list">
+            <li>
+              <a href="./appbar.html" class="nav-link">AppBar</a>
+            </li>
+            <li>
+              <a href="./appdrawer.html" class="nav-link"> App Drawer </a>
+            </li>
+            <li>
+              <a href="./buttons.html" class="nav-link">Buttons</a>
+            </li>
+            <li>
+              <a href="./avatars.html" class="nav-link">Avatars</a>
+            </li>
+            <li>
+              <a href="./cards.html" class="nav-link">Cards</a>
+            </li>
+            <li>
+              <a href="./modal.html" class="nav-link">Modal</a>
+            </li>
+            <li>
+              <a href="./form.html" class="nav-link">Form</a>
+            </li>
+            <li>
+              <a href="./list.html" class="nav-link">List</a>
+            </li>
+            <li>
+              <a href="./fab.html" class="nav-link">FAB</a>
+            </li>
+          </ul>
+        </li>
+        <li class="app-drawer-item submenu" onclick="toggleSubMenu(this)">
+          <a href="../properties/" class="nav-link">
+            <i class="material-icons">insights</i>
+            Properties
+          </a>
+          <ul class="app-drawer-sub-list">
+            <li class="app-drawer-item">
+              <a href="../properties/radius.html" class="nav-link">Radius</a>
+            </li>
+            <li class="app-drawer-item">
+              <a href="../properties/color.html" class="nav-link">Color</a>
+            </li>
+            <li class="app-drawer-item">
+              <a href="../properties/size.html" class="nav-link">Size</a>
+            </li>
+            <li class="app-drawer-item">
+              <a href="../properties/shadow.html" class="nav-link">Shadow</a>
+            </li>
+            <li class="app-drawer-item">
+              <a href="../properties/grid.html" class="nav-link">Grid</a>
+            </li>
+            <li class="app-drawer-item">
+              <a href="../properties/typography.html" class="nav-link">
+                Typography
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="app-drawer-item">
+          <a href="../index.html" class="nav-link">
+            <i class="material-icons">info_outline</i>
+            About
+          </a>
+        </li>
+        <li class="app-drawer-item">
+          <a href="https://www.buymeacoffee.com/mominraza" class="nav-link">
+            <i class="material-icons">support</i>
+            Support
+          </a>
+        </li>
+        <li class="app-drawer-item">
+          <a href="https://github.com/MominRaza/Amboo/issues" class="nav-link">
+            <i class="material-icons">groups</i>
+            Contribute
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main class="main">
+      <h2 class="h2">Cards</h2>
+
       <div class="card">
         <div class="card-header">
           <div class="leading">
@@ -105,7 +224,7 @@
         <div class="card grid-item"></div>
         <div class="card grid-item"></div>
       </div>
-    </div>
+    </main>
     <!-- Amboo JS -->
     <script src="https://cdn.jsdelivr.net/gh/MominRaza/Amboo@master/js/amboo.min.js"></script>
   </body>

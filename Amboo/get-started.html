@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amboo</title>
+    <title>Get Started with Amboo</title>
     <!-- Roboto Font -->
     <link
       rel="stylesheet"
@@ -33,21 +33,8 @@
           <p class="title">Amboo</p>
         </div>
         <div class="trailing">
-          <a class="btn secondary icon-l" onclick="toggleModal('modal')">
-            <div class="material-icons md-18">login</div>
-            Login
-          </a>
           <a href="#" class="btn btn-t sm white">
             <i class="material-icons">share</i>
-          </a>
-          <a href="#" class="btn btn-t sm white">
-            <i class="material-icons">search</i>
-          </a>
-          <a href="#" class="btn btn-t sm white">
-            <i class="material-icons">more_vert</i>
-          </a>
-          <a href="#">
-            <img src="https://picsum.photos/40" class="avatar sm" />
           </a>
         </div>
       </div>
@@ -56,7 +43,7 @@
       <div class="app-drawer-head"></div>
       <ul class="app-drawer-list">
         <li class="app-drawer-item">
-          <a href="#" class="nav-link">
+          <a href="./" class="nav-link">
             <i class="material-icons">home</i>
             Home
           </a>
@@ -153,134 +140,33 @@
       </ul>
     </nav>
     <main class="main">
-      <h1 class="h1">Amboo</h1>
-      <p class="s1">
-        Amboo is a Google Material Design, free and open-source HTML, CSS and JS
-        library.
-      </p>
-      <a href="./get-started.html" class="btn primary lg">Get Started</a>
-      <a href="https://github.com/MominRaza/Amboo" class="btn btn-o primary lg">
-        Download
-      </a>
-      <p class="b1">Release: v0.0.1</p>
-      <h2 class="h3">Templetes</h2>
-      <p class="s1">Try out already build templetes</p>
-      <div class="grid grid-3">
-        <div class="grid-item card">
-          <div class="card-header">
-            <h3 class="h5">Admin Dashboard</h3>
-          </div>
-          <div class="card-body">
-            <img
-              src="./coming-soon.jpg"
-              alt="Admin Dashboard"
-              class="card-image"
-            />
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn primary">Download</a>
-            <a href="#" class="btn btn-o primary">Live Demo</a>
-          </div>
-        </div>
-        <div class="grid-item card">
-          <div class="card-header">
-            <h3 class="h5">About Us Templete</h3>
-          </div>
-          <div class="card-body">
-            <img
-              src="./coming-soon.jpg"
-              alt="About Us Templete"
-              class="card-image"
-            />
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn primary">Download</a>
-            <a href="#" class="btn btn-o primary">Live Demo</a>
-          </div>
-        </div>
-        <div class="grid-item card">
-          <div class="card-header">
-            <h3 class="h5">Contact Us Templete</h3>
-          </div>
-          <div class="card-body">
-            <img
-              src="./coming-soon.jpg"
-              alt="Contact Us Templete"
-              class="card-image"
-            />
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn primary">Download</a>
-            <a href="#" class="btn btn-o primary">Live Demo</a>
-          </div>
-        </div>
-        <div class="grid-item card">
-          <div class="card-header">
-            <h3 class="h5">User Profile Templete</h3>
-          </div>
-          <div class="card-body">
-            <img
-              src="./coming-soon.jpg"
-              alt="User Profile Templete"
-              class="card-image"
-            />
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn primary">Download</a>
-            <a href="#" class="btn btn-o primary">Live Demo</a>
-          </div>
-        </div>
-        <div class="grid-item card">
-          <div class="card-header">
-            <h3 class="h5">Login / Register Templete</h3>
-          </div>
-          <div class="card-body">
-            <img
-              src="./coming-soon.jpg"
-              alt="Login / Register Templete"
-              class="card-image"
-            />
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn primary">Download</a>
-            <a href="#" class="btn btn-o primary">Live Demo</a>
-          </div>
-        </div>
+      <h1 class="h2">Get Started with Amboo</h1>
+      <h2 class="h3">How to use</h2>
+      <div class="card">
+        <h3 class="h4">CSS</h3>
+        <p class="b1">
+          Add this in &lt;head&gt; section above your custom stylesheet
+        </p>
+        <pre>
+    &lt;!-- Amboo CSS --&gt;
+    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MominRaza/Amboo@master/css/amboo.min.css"/&gt;
+        </pre>
+        <h3 class="h4">JS</h3>
+        <p class="b1">Add this just above closing &lt;/body&gt; tag</p>
+        <pre>
+    &lt;!-- Amboo JS --&gt;
+    &lt;script src="https://cdn.jsdelivr.net/gh/MominRaza/Amboo@master/js/amboo.min.js"&gt;&lt;/script&gt;
+        </pre>
+        <h3 class="h4">ICONS</h3>
+        <p class="b1">
+          Add this in &lt;head&gt; section below Amboo CSS stylesheet
+        </p>
+        <pre>
+    &lt;!-- Material Icons --&gt;
+    &lt;link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/&gt;
+        </pre>
       </div>
     </main>
-
-    <div class="modal card" id="modal">
-      <h2 class="h4">Login</h2>
-      <button
-        class="btn btn-t danger sm modal-close"
-        onclick="toggleModal('modal')"
-      >
-        <div class="material-icons">close</div>
-      </button>
-      <form action="#">
-        <div class="card-body">
-          <label>
-            Username
-            <input type="text" name="username" id="username" />
-          </label>
-          <label>
-            Password
-            <input type="password" name="password" id="password" />
-          </label>
-          <label>
-            <input type="checkbox" name="terms" id="terms" />
-            Accept terms
-          </label>
-        </div>
-        <div class="card-footer right">
-          <button type="submit" class="btn primary">Done</button>
-          <a href="#" class="btn btn-o primary" onclick="toggleModal('modal')">
-            Close
-          </a>
-        </div>
-      </form>
-    </div>
-
     <!-- Amboo JS -->
     <script src="https://cdn.jsdelivr.net/gh/MominRaza/Amboo@master/js/amboo.min.js"></script>
   </body>

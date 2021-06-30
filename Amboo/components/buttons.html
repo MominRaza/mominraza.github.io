@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Buttons - Amboo</title>
+    <title>Get Started with Amboo</title>
     <!-- Roboto Font -->
     <link
       rel="stylesheet"
@@ -20,216 +21,336 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
   </head>
-
   <body>
-    <h2 class="h2">Buttons</h2>
-    <p>btn classes can be use on a, button and input[submit]</p>
-    <p>
-      3 types * 5 sizis * 9 colors * 4 cobination of icons = 540 unique buttons.
-    </p>
-    <div class="card">
-      <button class="btn">Contained</button>
-      <button class="btn btn-o">Outlined</button>
-      <button class="btn btn-t">Text</button>
-      <h4 class="h4">classes</h4>
+    <header class="header">
+      <div class="appbar">
+        <div class="leading" onclick="toggleMenu()">
+          <a href="#" class="btn btn-t sm white">
+            <i class="material-icons">menu</i>
+          </a>
+        </div>
+        <div class="ts-wraper">
+          <p class="title">Amboo</p>
+        </div>
+        <div class="trailing">
+          <a href="#" class="btn btn-t sm white">
+            <i class="material-icons">share</i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <nav class="app-drawer">
+      <div class="app-drawer-head"></div>
+      <ul class="app-drawer-list">
+        <li class="app-drawer-item">
+          <a href="../" class="nav-link">
+            <i class="material-icons">home</i>
+            Home
+          </a>
+        </li>
+        <li class="app-drawer-item">
+          <a href="../get-started.html" class="nav-link">
+            <i class="material-icons">integration_instructions</i>
+            Getting Started
+          </a>
+        </li>
+        <li
+          class="app-drawer-item submenu submenu-active"
+          onclick="toggleSubMenu(this)"
+        >
+          <a href="./" class="nav-link">
+            <i class="material-icons">apps</i>
+            Components
+          </a>
+          <ul class="app-drawer-sub-list">
+            <li>
+              <a href="./appbar.html" class="nav-link">AppBar</a>
+            </li>
+            <li>
+              <a href="./appdrawer.html" class="nav-link"> App Drawer </a>
+            </li>
+            <li>
+              <a href="./buttons.html" class="nav-link">Buttons</a>
+            </li>
+            <li>
+              <a href="./avatars.html" class="nav-link">Avatars</a>
+            </li>
+            <li>
+              <a href="./cards.html" class="nav-link">Cards</a>
+            </li>
+            <li>
+              <a href="./modal.html" class="nav-link">Modal</a>
+            </li>
+            <li>
+              <a href="./form.html" class="nav-link">Form</a>
+            </li>
+            <li>
+              <a href="./list.html" class="nav-link">List</a>
+            </li>
+            <li>
+              <a href="./fab.html" class="nav-link">FAB</a>
+            </li>
+          </ul>
+        </li>
+        <li class="app-drawer-item submenu" onclick="toggleSubMenu(this)">
+          <a href="../properties/" class="nav-link">
+            <i class="material-icons">insights</i>
+            Properties
+          </a>
+          <ul class="app-drawer-sub-list">
+            <li class="app-drawer-item">
+              <a href="../properties/radius.html" class="nav-link">Radius</a>
+            </li>
+            <li class="app-drawer-item">
+              <a href="../properties/color.html" class="nav-link">Color</a>
+            </li>
+            <li class="app-drawer-item">
+              <a href="../properties/size.html" class="nav-link">Size</a>
+            </li>
+            <li class="app-drawer-item">
+              <a href="../properties/shadow.html" class="nav-link">Shadow</a>
+            </li>
+            <li class="app-drawer-item">
+              <a href="../properties/grid.html" class="nav-link">Grid</a>
+            </li>
+            <li class="app-drawer-item">
+              <a href="../properties/typography.html" class="nav-link">
+                Typography
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="app-drawer-item">
+          <a href="../index.html" class="nav-link">
+            <i class="material-icons">info_outline</i>
+            About
+          </a>
+        </li>
+        <li class="app-drawer-item">
+          <a href="https://www.buymeacoffee.com/mominraza" class="nav-link">
+            <i class="material-icons">support</i>
+            Support
+          </a>
+        </li>
+        <li class="app-drawer-item">
+          <a href="https://github.com/MominRaza/Amboo/issues" class="nav-link">
+            <i class="material-icons">groups</i>
+            Contribute
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main class="main">
+      <h2 class="h2">Buttons</h2>
+      <p>btn classes can be use on a, button and input[submit]</p>
       <p>
-        class="btn"<br />
-        class="btn btn-o"<br />
-        class="btn btn-t"
+        3 types * 5 sizis * 9 colors * 4 cobination of icons = 540 unique
+        buttons.
       </p>
-    </div>
-    <h2 class="h2">Contained Button Properties</h2>
-    <h3 class="h3">Button Sizes</h3>
-    <div class="card">
-      <button class="btn xsm">Extra Small</button>
-      <button class="btn sm">Small</button>
-      <button class="btn">Default Medium</button>
-      <button class="btn lg">Large</button>
-      <button class="btn xlg">Extra Large</button>
-      <h4 class="h4">classes</h4>
-      <p>
-        class="btn xsm"<br />
-        class="btn sm"<br />
-        class="btn"<br />
-        class="btn lg"<br />
-        class="btn xlg"
-      </p>
-    </div>
-    <h3 class="h3">Button Colors</h3>
-    <div class="card">
-      <button class="btn">Default</button>
-      <button class="btn primary">Primary</button>
-      <button class="btn secondary">Secondary</button>
-      <button class="btn success">Success</button>
-      <button class="btn danger">Danger</button>
-      <button class="btn warning">Warning</button>
-      <button class="btn info">Info</button>
-      <span class="b-black" style="padding: 10px; display: inline-block">
-        <button class="btn white">White</button>
-      </span>
-      <button class="btn black">Black</button>
-      <h4 class="h4">classes</h4>
-      <p>
-        class="btn"<br />
-        class="btn primary"<br />
-        class="btn secondary"<br />
-        class="btn success"<br />
-        class="btn danger"<br />
-        class="btn warning"<br />
-        class="btn info"<br />
-        class="btn white"<br />
-        class="btn black"
-      </p>
-    </div>
-    <h3 class="h3">Button With Icon</h3>
-    <div class="card">
-      <button class="btn icon-l">
-        <i class="material-icons">add</i>
-        <span>Left Icon</span>
-      </button>
-      <button class="btn icon-r">
-        <span>Right Icon</span>
-        <i class="material-icons">add</i>
-      </button>
-      <p>Only Icon</p>
-      <button class="btn icon-o">
-        <i class="material-icons">add</i>
-      </button>
-      <h4 class="h4">classes</h4>
-      <p>
-        class="btn icon-l"<br />
-        class="btn icon-r"<br />
-        class="btn icon-o"
-      </p>
-    </div>
-    <h2 class="h2">Outlined Button Properties</h2>
-    <h3 class="h3">Button Sizes</h3>
-    <div class="card">
-      <button class="btn btn-o xsm">Extra Small</button>
-      <button class="btn btn-o sm">Small</button>
-      <button class="btn btn-o">Default Medium</button>
-      <button class="btn btn-o lg">Large</button>
-      <button class="btn btn-o xlg">Extra Large</button>
-      <h4 class="h4">classes</h4>
-      <p>
-        class="btn btn-o xsm"<br />
-        class="btn btn-o sm"<br />
-        class="btn btn-o"<br />
-        class="btn btn-o lg"<br />
-        class="btn btn-o xlg"
-      </p>
-    </div>
-    <h3 class="h3">Button Colors</h3>
-    <div class="card">
-      <button class="btn btn-o">Default</button>
-      <button class="btn btn-o primary">Primary</button>
-      <button class="btn btn-o secondary">Secondary</button>
-      <button class="btn btn-o success">Success</button>
-      <button class="btn btn-o danger">Danger</button>
-      <button class="btn btn-o warning">Warning</button>
-      <button class="btn btn-o info">Info</button>
-      <span class="b-black" style="padding: 10px; display: inline-block">
-        <button class="btn btn-o white">White</button>
-      </span>
-      <button class="btn btn-o black">Black</button>
-      <h4 class="h4">classes</h4>
-      <p>
-        class="btn btn-o"<br />
-        class="btn btn-o primary"<br />
-        class="btn btn-o secondary"<br />
-        class="btn btn-o success"<br />
-        class="btn btn-o danger"<br />
-        class="btn btn-o warning"<br />
-        class="btn btn-o info"<br />
-        class="btn btn-o white"<br />
-        class="btn btn-o black"
-      </p>
-    </div>
-    <h3 class="h3">Button With Icon</h3>
-    <div class="card">
-      <button class="btn btn-o icon-l">
-        <i class="material-icons">add</i>
-        <span>Left Icon</span>
-      </button>
-      <button class="btn btn-o icon-r">
-        <span>Right Icon</span>
-        <i class="material-icons">add</i>
-      </button>
-      <p>Only Icon</p>
-      <button class="btn btn-o icon-o">
-        <i class="material-icons">add</i>
-      </button>
-      <h4 class="h4">classes</h4>
-      <p>
-        class="btn btn-o icon-l"<br />
-        class="btn btn-o icon-r"<br />
-        class="btn btn-o icon-o"
-      </p>
-    </div>
-    <h2 class="h2">Text Button Properties</h2>
-    <h3 class="h3">Button Sizes</h3>
-    <div class="card">
-      <button class="btn btn-t xsm">Extra Small</button>
-      <button class="btn btn-t sm">Small</button>
-      <button class="btn btn-t">Default Medium</button>
-      <button class="btn btn-t lg">Large</button>
-      <button class="btn btn-t xlg">Extra Large</button>
-      <h4 class="h4">classes</h4>
-      <p>
-        class="btn btn-t xsm"<br />
-        class="btn btn-t sm"<br />
-        class="btn btn-t"<br />
-        class="btn btn-t lg"<br />
-        class="btn btn-t xlg"
-      </p>
-    </div>
-    <h3 class="h3">Button Colors</h3>
-    <div class="card">
-      <button class="btn btn-t">Default</button>
-      <button class="btn btn-t primary">Primary</button>
-      <button class="btn btn-t secondary">Secondary</button>
-      <button class="btn btn-t success">Success</button>
-      <button class="btn btn-t danger">Danger</button>
-      <button class="btn btn-t warning">Warning</button>
-      <button class="btn btn-t info">Info</button>
-      <span class="b-black" style="padding: 10px; display: inline-block">
-        <button class="btn btn-t white">White</button>
-      </span>
-      <button class="btn btn-t black">Black</button>
-      <h4 class="h4">classes</h4>
-      <p>
-        class="btn btn-t"<br />
-        class="btn btn-t primary"<br />
-        class="btn btn-t secondary"<br />
-        class="btn btn-t success"<br />
-        class="btn btn-t danger"<br />
-        class="btn btn-t warning"<br />
-        class="btn btn-t info"<br />
-        class="btn btn-t white"<br />
-        class="btn btn-t black"
-      </p>
-    </div>
-    <h3 class="h3">Button With Icon</h3>
-    <div class="card">
-      <button class="btn btn-t icon-l">
-        <i class="material-icons">add</i>
-        <span>Left Icon</span>
-      </button>
-      <button class="btn btn-t icon-r">
-        <span>Right Icon</span>
-        <i class="material-icons">add</i>
-      </button>
-      <p>Only Icon</p>
-      <button class="btn btn-t icon-o">
-        <i class="material-icons">add</i>
-      </button>
-      <h4 class="h4">classes</h4>
-      <p>
-        class="btn btn-t icon-l"<br />
-        class="btn btn-t icon-r"<br />
-        class="btn btn-t icon-o"
-      </p>
-    </div>
+      <div class="card">
+        <button class="btn">Contained</button>
+        <button class="btn btn-o">Outlined</button>
+        <button class="btn btn-t">Text</button>
+        <h4 class="h4">classes</h4>
+        <p>
+          class="btn"<br />
+          class="btn btn-o"<br />
+          class="btn btn-t"
+        </p>
+      </div>
+      <h2 class="h2">Contained Button Properties</h2>
+      <h3 class="h3">Button Sizes</h3>
+      <div class="card">
+        <button class="btn xsm">Extra Small</button>
+        <button class="btn sm">Small</button>
+        <button class="btn">Default Medium</button>
+        <button class="btn lg">Large</button>
+        <button class="btn xlg">Extra Large</button>
+        <h4 class="h4">classes</h4>
+        <p>
+          class="btn xsm"<br />
+          class="btn sm"<br />
+          class="btn"<br />
+          class="btn lg"<br />
+          class="btn xlg"
+        </p>
+      </div>
+      <h3 class="h3">Button Colors</h3>
+      <div class="card">
+        <button class="btn">Default</button>
+        <button class="btn primary">Primary</button>
+        <button class="btn secondary">Secondary</button>
+        <button class="btn success">Success</button>
+        <button class="btn danger">Danger</button>
+        <button class="btn warning">Warning</button>
+        <button class="btn info">Info</button>
+        <span class="b-black" style="padding: 10px; display: inline-block">
+          <button class="btn white">White</button>
+        </span>
+        <button class="btn black">Black</button>
+        <h4 class="h4">classes</h4>
+        <p>
+          class="btn"<br />
+          class="btn primary"<br />
+          class="btn secondary"<br />
+          class="btn success"<br />
+          class="btn danger"<br />
+          class="btn warning"<br />
+          class="btn info"<br />
+          class="btn white"<br />
+          class="btn black"
+        </p>
+      </div>
+      <h3 class="h3">Button With Icon</h3>
+      <div class="card">
+        <button class="btn icon-l">
+          <i class="material-icons">add</i>
+          <span>Left Icon</span>
+        </button>
+        <button class="btn icon-r">
+          <span>Right Icon</span>
+          <i class="material-icons">add</i>
+        </button>
+        <p>Only Icon</p>
+        <button class="btn icon-o">
+          <i class="material-icons">add</i>
+        </button>
+        <h4 class="h4">classes</h4>
+        <p>
+          class="btn icon-l"<br />
+          class="btn icon-r"<br />
+          class="btn icon-o"
+        </p>
+      </div>
+      <h2 class="h2">Outlined Button Properties</h2>
+      <h3 class="h3">Button Sizes</h3>
+      <div class="card">
+        <button class="btn btn-o xsm">Extra Small</button>
+        <button class="btn btn-o sm">Small</button>
+        <button class="btn btn-o">Default Medium</button>
+        <button class="btn btn-o lg">Large</button>
+        <button class="btn btn-o xlg">Extra Large</button>
+        <h4 class="h4">classes</h4>
+        <p>
+          class="btn btn-o xsm"<br />
+          class="btn btn-o sm"<br />
+          class="btn btn-o"<br />
+          class="btn btn-o lg"<br />
+          class="btn btn-o xlg"
+        </p>
+      </div>
+      <h3 class="h3">Button Colors</h3>
+      <div class="card">
+        <button class="btn btn-o">Default</button>
+        <button class="btn btn-o primary">Primary</button>
+        <button class="btn btn-o secondary">Secondary</button>
+        <button class="btn btn-o success">Success</button>
+        <button class="btn btn-o danger">Danger</button>
+        <button class="btn btn-o warning">Warning</button>
+        <button class="btn btn-o info">Info</button>
+        <span class="b-black" style="padding: 10px; display: inline-block">
+          <button class="btn btn-o white">White</button>
+        </span>
+        <button class="btn btn-o black">Black</button>
+        <h4 class="h4">classes</h4>
+        <p>
+          class="btn btn-o"<br />
+          class="btn btn-o primary"<br />
+          class="btn btn-o secondary"<br />
+          class="btn btn-o success"<br />
+          class="btn btn-o danger"<br />
+          class="btn btn-o warning"<br />
+          class="btn btn-o info"<br />
+          class="btn btn-o white"<br />
+          class="btn btn-o black"
+        </p>
+      </div>
+      <h3 class="h3">Button With Icon</h3>
+      <div class="card">
+        <button class="btn btn-o icon-l">
+          <i class="material-icons">add</i>
+          <span>Left Icon</span>
+        </button>
+        <button class="btn btn-o icon-r">
+          <span>Right Icon</span>
+          <i class="material-icons">add</i>
+        </button>
+        <p>Only Icon</p>
+        <button class="btn btn-o icon-o">
+          <i class="material-icons">add</i>
+        </button>
+        <h4 class="h4">classes</h4>
+        <p>
+          class="btn btn-o icon-l"<br />
+          class="btn btn-o icon-r"<br />
+          class="btn btn-o icon-o"
+        </p>
+      </div>
+      <h2 class="h2">Text Button Properties</h2>
+      <h3 class="h3">Button Sizes</h3>
+      <div class="card">
+        <button class="btn btn-t xsm">Extra Small</button>
+        <button class="btn btn-t sm">Small</button>
+        <button class="btn btn-t">Default Medium</button>
+        <button class="btn btn-t lg">Large</button>
+        <button class="btn btn-t xlg">Extra Large</button>
+        <h4 class="h4">classes</h4>
+        <p>
+          class="btn btn-t xsm"<br />
+          class="btn btn-t sm"<br />
+          class="btn btn-t"<br />
+          class="btn btn-t lg"<br />
+          class="btn btn-t xlg"
+        </p>
+      </div>
+      <h3 class="h3">Button Colors</h3>
+      <div class="card">
+        <button class="btn btn-t">Default</button>
+        <button class="btn btn-t primary">Primary</button>
+        <button class="btn btn-t secondary">Secondary</button>
+        <button class="btn btn-t success">Success</button>
+        <button class="btn btn-t danger">Danger</button>
+        <button class="btn btn-t warning">Warning</button>
+        <button class="btn btn-t info">Info</button>
+        <span class="b-black" style="padding: 10px; display: inline-block">
+          <button class="btn btn-t white">White</button>
+        </span>
+        <button class="btn btn-t black">Black</button>
+        <h4 class="h4">classes</h4>
+        <p>
+          class="btn btn-t"<br />
+          class="btn btn-t primary"<br />
+          class="btn btn-t secondary"<br />
+          class="btn btn-t success"<br />
+          class="btn btn-t danger"<br />
+          class="btn btn-t warning"<br />
+          class="btn btn-t info"<br />
+          class="btn btn-t white"<br />
+          class="btn btn-t black"
+        </p>
+      </div>
+      <h3 class="h3">Button With Icon</h3>
+      <div class="card">
+        <button class="btn btn-t icon-l">
+          <i class="material-icons">add</i>
+          <span>Left Icon</span>
+        </button>
+        <button class="btn btn-t icon-r">
+          <span>Right Icon</span>
+          <i class="material-icons">add</i>
+        </button>
+        <p>Only Icon</p>
+        <button class="btn btn-t icon-o">
+          <i class="material-icons">add</i>
+        </button>
+        <h4 class="h4">classes</h4>
+        <p>
+          class="btn btn-t icon-l"<br />
+          class="btn btn-t icon-r"<br />
+          class="btn btn-t icon-o"
+        </p>
+      </div>
+    </main>
     <!-- Amboo JS -->
     <script src="https://cdn.jsdelivr.net/gh/MominRaza/Amboo@master/js/amboo.min.js"></script>
   </body>

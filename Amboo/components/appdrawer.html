@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>App Drawer - Amboo</title>
     <!-- Roboto Font -->
@@ -20,66 +21,129 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
   </head>
-
   <body>
+    <header class="header">
+      <div class="appbar">
+        <div class="leading" onclick="toggleMenu()">
+          <a href="#" class="btn btn-t sm white">
+            <i class="material-icons">menu</i>
+          </a>
+        </div>
+        <div class="ts-wraper">
+          <p class="title">Amboo</p>
+        </div>
+        <div class="trailing">
+          <a href="#" class="btn btn-t sm white">
+            <i class="material-icons">share</i>
+          </a>
+        </div>
+      </div>
+    </header>
     <nav class="app-drawer">
       <div class="app-drawer-head"></div>
       <ul class="app-drawer-list">
         <li class="app-drawer-item">
-          <a href="../" icon="home" class="nav-link">Home</a>
+          <a href="../" class="nav-link">
+            <i class="material-icons">home</i>
+            Home
+          </a>
         </li>
         <li class="app-drawer-item">
-          <a href="#" icon="integration_instructions" class="nav-link"
-            >Installation</a
-          >
+          <a href="../get-started.html" class="nav-link">
+            <i class="material-icons">integration_instructions</i>
+            Getting Started
+          </a>
         </li>
-        <li class="app-drawer-item">
-          <a href="#" icon="apps" class="nav-link">Components</a>
-          <ul class="app-drawer-list">
+        <li
+          class="app-drawer-item submenu submenu-active"
+          onclick="toggleSubMenu(this)"
+        >
+          <a href="./" class="nav-link">
+            <i class="material-icons">apps</i>
+            Components
+          </a>
+          <ul class="app-drawer-sub-list">
             <li>
-              <a href="../components/appbar.html" class="nav-link">AppBar</a>
+              <a href="./appbar.html" class="nav-link">AppBar</a>
             </li>
             <li>
-              <a href="../components/appdrawer.html" class="nav-link"
-                >App Drawer</a
-              >
+              <a href="#" class="nav-link"> App Drawer </a>
             </li>
             <li>
-              <a href="../components/buttons.html" class="nav-link">Buttons</a>
+              <a href="./buttons.html" class="nav-link">Buttons</a>
             </li>
             <li>
-              <a href="../components/avatars.html" class="nav-link">Avatars</a>
+              <a href="./avatars.html" class="nav-link">Avatars</a>
             </li>
             <li>
-              <a href="../components/cards.html" class="nav-link">Cards</a>
+              <a href="./cards.html" class="nav-link">Cards</a>
             </li>
             <li>
-              <a href="../components/list.html" class="nav-link">List</a>
+              <a href="./modal.html" class="nav-link">Modal</a>
             </li>
             <li>
-              <a href="../components/fab.html" class="nav-link">FAB</a>
+              <a href="./form.html" class="nav-link">Form</a>
+            </li>
+            <li>
+              <a href="./list.html" class="nav-link">List</a>
+            </li>
+            <li>
+              <a href="./fab.html" class="nav-link">FAB</a>
             </li>
           </ul>
         </li>
-        <li class="app-drawer-item">
-          <a href="#" icon="insights" class="nav-link">Properties</a>
-          <ul class="app-drawer-list">
+        <li class="app-drawer-item submenu" onclick="toggleSubMenu(this)">
+          <a href="../properties/" class="nav-link">
+            <i class="material-icons">insights</i>
+            Properties
+          </a>
+          <ul class="app-drawer-sub-list">
             <li class="app-drawer-item">
               <a href="../properties/radius.html" class="nav-link">Radius</a>
             </li>
+            <li class="app-drawer-item">
+              <a href="../properties/color.html" class="nav-link">Color</a>
+            </li>
+            <li class="app-drawer-item">
+              <a href="../properties/size.html" class="nav-link">Size</a>
+            </li>
+            <li class="app-drawer-item">
+              <a href="../properties/shadow.html" class="nav-link">Shadow</a>
+            </li>
+            <li class="app-drawer-item">
+              <a href="../properties/grid.html" class="nav-link">Grid</a>
+            </li>
+            <li class="app-drawer-item">
+              <a href="../properties/typography.html" class="nav-link">
+                Typography
+              </a>
+            </li>
           </ul>
         </li>
         <li class="app-drawer-item">
-          <a href="#" icon="home" class="nav-link">About</a>
+          <a href="../index.html" class="nav-link">
+            <i class="material-icons">info_outline</i>
+            About
+          </a>
         </li>
         <li class="app-drawer-item">
-          <a href="#" icon="support" class="nav-link">Support</a>
+          <a href="https://www.buymeacoffee.com/mominraza" class="nav-link">
+            <i class="material-icons">support</i>
+            Support
+          </a>
         </li>
         <li class="app-drawer-item">
-          <a href="#" icon="groups" class="nav-link">Contribute</a>
+          <a href="https://github.com/MominRaza/Amboo/issues" class="nav-link">
+            <i class="material-icons">groups</i>
+            Contribute
+          </a>
         </li>
       </ul>
     </nav>
+    <main class="main">
+      <h1 class="h2">App Drawer</h1>
+      <h2 class="h3">Coming Soon...</h2>
+    </main>
     <!-- Amboo JS -->
     <script src="https://cdn.jsdelivr.net/gh/MominRaza/Amboo@master/js/amboo.min.js"></script>
   </body>
