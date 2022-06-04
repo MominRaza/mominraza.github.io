@@ -367,19 +367,7 @@ footer .credit {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-@media (max-width: 1010px) {
-  .right .detail {
-    margin-left: -10px;
-    width: calc(100% + 50px);
-    padding: 15px;
-  }
-  .right .details .details-p {
-    padding: 15px;
-    margin: 6px;
-    height: 70px;
-  }
-}
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   section {
     padding: 0 10px;
   }
@@ -439,6 +427,16 @@ footer .credit {
   .right .details .details-p img {
     width: 30px;
     margin: 10px 15px 20px 5px;
+  }
+  .right .detail {
+    margin-left: -10px;
+    width: calc(100% + 50px);
+    padding: 15px;
+  }
+  .right .details .details-p {
+    padding: 15px;
+    margin: 6px;
+    height: 70px;
   }
   footer .links {
     width: 100%;
