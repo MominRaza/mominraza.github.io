@@ -5,7 +5,7 @@
   font-size: 2em;
 }
 .right header .title::after {
-  content: "";
+  content: '';
   position: absolute;
   margin-top: 10px;
   height: 4px;
@@ -84,6 +84,7 @@
   line-height: 1.7em;
   letter-spacing: 0.07em;
   font-size: 0.95em;
+  margin-bottom: 0.5em;
 }
 .right .detail {
   margin-left: -10px;
