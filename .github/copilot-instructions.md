@@ -1,0 +1,2 @@
+- We are using Bun
+- We are in the project root directory
